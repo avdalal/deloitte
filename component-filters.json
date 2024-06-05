@@ -5,7 +5,7 @@
     },
     {
         "id": "columns",
-        "components": []
+        "components": ["text", "image", "button", "title", "hero", "cards", "columns", "teaser"]
     },
     {
         "id": "column",
