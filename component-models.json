@@ -11,6 +11,27 @@
             },
             {
                 "component": "select",
+                "name": "alighment",
+                "value": "right",
+                "label": "Alighment",
+                "valueType": "string",
+                "options": [
+                    {
+                        "name": "right",
+                        "value": "right"
+                    },
+                    {
+                        "name": "left",
+                        "value": "left"
+                    },
+                    {
+                        "name": "center",
+                        "value": "center"
+                    }
+                ]
+            },
+            {
+                "component": "select",
                 "name": "type",
                 "value": "h1",
                 "label": "Type",
