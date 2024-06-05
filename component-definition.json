@@ -152,6 +152,18 @@
                             }
                         }
                     }
+                },
+                {
+                    "title": "Title V2",
+                    "id": "titlev2",
+                    "plugins": {
+                        "xwalk": {
+                            "page": {
+                                "resourceType": "core/franklin/components/title/v1/title",
+                                "template": {}
+                            }
+                        }
+                    }
                 }
             ]
         }
