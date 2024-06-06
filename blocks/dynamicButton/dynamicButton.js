@@ -1,7 +1,8 @@
 export default function decorate(block) {
     // Find all p elements in the block
-    const  [fontSize, textAlign, fontWeight, buttonText] = [...block.querySelectorAll('p')].map(p => p.textContent);
-
+    const  [fontSize, textAlign, fontWeight, buttonText] = block.children;
+    const fontSizeValue = fontSize.textContent;
+    fontSize.classList.add(`rating-value-${fontSizeValue}`);
     // Create a new button element
     const button = document.createElement('button');
 
