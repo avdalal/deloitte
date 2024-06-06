@@ -270,7 +270,7 @@
         ]
     },
     {
-        "id": "button",
+        "id": "customButton",
         "fields": [
             {
                 "component": "text-input",
