@@ -23,7 +23,10 @@
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/title/v1/title",
-                                "template": {}
+                                "template": {
+                                    "name": "Title",
+                                    "model": "title"
+                                }
                             }
                         }
                     }
@@ -63,102 +66,6 @@
                                     "name": "Dynamic Button",
                                     "model": "dynamicButton"
                                 }
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "Link",
-                    "id": "link",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/link/v1/link",
-                                "template": {}
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "List",
-                    "id": "list",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/list/v1/list",
-                                "template": {}
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "Table",
-                    "id": "table",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/table/v1/table",
-                                "template": {}
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "Accordion",
-                    "id": "accordion",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/accordion/v1/accordion",
-                                "template": {}
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "Tabs",
-                    "id": "tabs",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/tabs/v1/tabs",
-                                "template": {}
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "Carousel",
-                    "id": "carousel",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/carousel/v1/carousel",
-                                "template": {}
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "Video",
-                    "id": "video",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/video/v1/video",
-                                "template": {}
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "Form",
-                    "id": "form",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/form/v1/form",
-                                "template": {}
                             }
                         }
                     }
