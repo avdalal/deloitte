@@ -13,7 +13,7 @@
     },
     {
         "id": "section",
-        "components": ["text", "image", "button", "title", "hero", "cards", "columns", "teaser", "dynamicButton", "quote"]
+        "components": ["text", "image", "button", "title", "hero", "cards", "columns", "teaser", "dynamicButton", "quote", "conditionally-revealed-component"]
     },
     {
         "id": "cards",
