@@ -162,7 +162,7 @@
                     "plugins": {
                         "xwalk": {
                             "page": {
-                                "resourceType": "core/franklin/components/button/v1/button",
+                                "resourceType": "core/franklin/components/text/v1/text",
                                 "template": {
                                     "name": "Dynamic Button",
                                     "model": "dynamicButton"
