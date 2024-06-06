@@ -28,16 +28,6 @@
     color: lightgray;
   }
   
-  .rating-value-1::before { width: 20%; }
-  .rating-value-2::before { width: 40%; }
-  .rating-value-3::before { width: 60%; }
-  .rating-value-4::before { width: 80%; }
-  .rating-value-5::before { width: 100%; }
-  
-  .rating-color-red { color: red; }
-  .rating-color-gold { color: gold; }
-  /* Add more colors as needed */
-
   .rating-value-1::before,
   .rating-value-2::before,
   .rating-value-3::before,
