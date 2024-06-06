@@ -187,7 +187,9 @@
                                     "buttonColor": "blue",
                                     "buttonRadius": "5px",
                                     "buttonTextSize": "16px",
-                                    "buttonTextStyle": "Bold"
+                                    "buttonTextStyle": "Bold",
+                                    "href": "#",
+                                    "onclick": "alert('Hello World')"
                                 }
                             }
                         }
