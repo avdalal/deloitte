@@ -248,34 +248,41 @@
         "id": "dynamicButton",
         "fields": [
             {
-                "component": "radio-group",
+                "component": "select",
                 "valueType": "string",
-                "name": "radioSelection",
-                "label": "Radio Selection",
-                "options": ["Option 1", "Option 2", "Option 3"]
+                "name": "buttonRadius",
+                "label": "Button Radius",
+                "options": [
+                    { "name": "None", "value": "0" },
+                    { "name": "Small", "value": "5px" },
+                    { "name": "Medium", "value": "10px" },
+                    { "name": "Large", "value": "15px" }
+                ]
             },
             {
                 "component": "select",
                 "valueType": "string",
                 "name": "position",
                 "label": "Position",
-                "options": ["Left", "Center", "Right"]
+                "options": [
+                    { "name": "Left", "value": "Left" },
+                    { "name": "Center", "value": "Center" },
+                    { "name": "Right", "value": "Right" }
+                ]
             },
             {
                 "component": "select",
                 "valueType": "string",
                 "name": "textStyle",
                 "label": "Text Style",
-                "options": ["Normal", "Bold", "Italic"]
+                "options": [
+                    { "name": "Normal", "value": "Normal" },
+                    { "name": "Bold", "value": "Bold" },
+                    { "name": "Italic", "value": "Italic" }
+                ]
             },
             {
-                "component": "color-picker",
-                "valueType": "string",
-                "name": "color",
-                "label": "Color"
-            },
-            {
-                "component": "text-input",
+                "component": "text",
                 "valueType": "string",
                 "name": "buttonText",
                 "label": "Button Text"
