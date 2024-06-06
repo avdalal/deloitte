@@ -1,25 +1,29 @@
 export default function decorate(block) {
     // Find all p elements in the block
-    const  [buttonText, buttonColor, buttonRadius, buttonTextSize, buttonTextStyle, href, onclick] = [...block.querySelectorAll('p')].map(p => p.textContent);
+    const  [buttonText, buttonRadius, buttonTextSize, buttonTextStyle, href, onclick] = [...block.querySelectorAll('p')];
+
+    // Get the text content of the elements
+    const buttonTextValue = buttonText.textContent;
+    const buttonRadiusValue = buttonRadius.textContent;
+    const buttonTextSizeValue = buttonTextSize.textContent;
+    const buttonTextStyleValue = buttonTextStyle.textContent;
+    const hrefValue = href.textContent;
+    const onclickValue = onclick.textContent;
 
     // Create a new button element
     const button = document.createElement('a'); // Using 'a' to allow href
 
     // Set the button's properties based on the p elements
-    button.textContent = buttonText;
-    button.style.backgroundColor = buttonColor;
-    button.style.borderRadius = buttonRadius;
-    button.style.fontSize = buttonTextSize;
-    button.style.fontWeight = buttonTextStyle === 'Bold' ? 'bold' : 'normal';
-    console.log(href);
-    //check if href is undefined
-    if(typeof(href) != "undefined") {
-        button.href = href;
-    } else {
-        button.href = 'javascript:void(0)';
-    }
+    button.textContent = buttonTextValue;
+    button.style.borderRadius = buttonRadiusValue;
+    button.style.fontSize = buttonTextSizeValue;
+    button.style.fontWeight = buttonTextStyleValue === 'Bold' ? 'bold' : 'normal';
+    button.href = hrefValue; // Set href to the value from the block
 
-
+    // Add onclick event listener
+    button.addEventListener('click', function() {
+        eval(onclickValue); // Execute the onclick code from the block
+    });
 
     // Add button class for additional styling
     button.classList.add('customButton');
@@ -29,4 +33,12 @@ export default function decorate(block) {
         block.firstChild.remove();
     }
     block.appendChild(button);
+
+    // Remove the original p elements from the DOM
+    buttonText.remove();
+    buttonRadius.remove();
+    buttonTextSize.remove();
+    buttonTextStyle.remove();
+    href.remove();
+    onclick.remove();
 }
