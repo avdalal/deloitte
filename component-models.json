@@ -282,6 +282,12 @@
                 ]
             },
             {
+                "component": "color-picker",
+                "valueType": "string",
+                "name": "color",
+                "label": "Color"
+            },
+            {
                 "component": "text",
                 "valueType": "string",
                 "name": "buttonText",
