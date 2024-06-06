@@ -390,7 +390,8 @@
                                 "template": {
                                     "name": "Rating",
                                     "model": "rating",
-                                    "ratingValue": "2"
+                                    "ratingValue": "2",
+                                    "ratingColor": "gold"
                                 }
                             }
                         }
