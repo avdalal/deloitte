@@ -266,6 +266,18 @@
                     { "name": "Bold", "value": "bold" },
                     { "name": "Italic", "value": "italic" }
                 ]
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "href",
+                "label": "Href"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "onclick",
+                "label": "OnClick"
             }
         ]
     }
