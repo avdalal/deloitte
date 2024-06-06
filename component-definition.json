@@ -54,21 +54,6 @@
                             }
                         }
                     }
-                },
-                {
-                    "title": "Dynamic Button",
-                    "id": "dynamicButton",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/button/v1/button",
-                                "template": {
-                                    "name": "Dynamic Button",
-                                    "model": "dynamicButton"
-                                }
-                            }
-                        }
-                    }
                 }
             ]
         },
@@ -166,6 +151,21 @@
                                     "model": "teaser",
                                     "foreground_title": "New Teaser",
                                     "foreground_description": "h2"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "title": "Dynamic Button",
+                    "id": "dynamicButton",
+                    "plugins": {
+                        "xwalk": {
+                            "page": {
+                                "resourceType": "core/franklin/components/button/v1/button",
+                                "template": {
+                                    "name": "Dynamic Button",
+                                    "model": "dynamicButton"
                                 }
                             }
                         }
