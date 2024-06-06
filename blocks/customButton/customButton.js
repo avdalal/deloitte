@@ -12,7 +12,7 @@ export default function decorate(block) {
 
     // Create a new button element
     const button = document.createElement('a'); // Using 'a' to allow href
-
+    console.log("here");
     // Set the button's properties based on the p elements
     button.textContent = buttonTextValue;
     button.style.borderRadius = buttonRadiusValue;
