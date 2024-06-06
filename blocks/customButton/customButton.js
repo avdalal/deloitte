@@ -10,7 +10,6 @@ export default function decorate(block) {
     button.style.backgroundColor = buttonColor;
     button.style.borderRadius = buttonRadius;
     button.style.fontSize = buttonTextSize;
-    button.style.fontWeight = buttonTextStyle === 'Bold' ? 'bold' : 'normal';
     console.log(href);
     //check if href is undefined
     if(typeof(href) != "undefined") {
@@ -19,17 +18,12 @@ export default function decorate(block) {
         button.href = 'javascript:void(0)';
     }
 
-    buttonText.remove();
-    buttonColor.remove();
-    buttonRadius.remove();
-    buttonTextSize.remove();
-    buttonTextStyle.remove();
-    href.remove();
-    onclick.remove();
+    // Remove the original p elements from the DOM
+    [...block.querySelectorAll('p')].forEach(p => p.remove());
 
     // Add button class for additional styling
     button.classList.add('customButton');
 
-   
+    // Append the button to the block
     block.appendChild(button);
 }
