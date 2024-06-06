@@ -325,12 +325,7 @@
                 "min": 0,
                 "max": 5
             },
-            {
-                "component": "text-input",
-                "valueType": "string",
-                "name": "ratingText",
-                "label": "Rating Text"
-            },
+
             {
                 "component": "select",
                 "valueType": "string",
@@ -339,7 +334,7 @@
                 "options": [
                     { "name": "Red", "value": "red" },
                     { "name": "Green", "value": "green" },
-                    { "name": "Blue", "value": "blue" }
+                    { "name": "Gold", "value": "gold" }
                 ]
             }
         ]

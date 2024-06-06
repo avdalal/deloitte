@@ -22,6 +22,7 @@
   .rating-value-3 { --rating: 3; }
   .rating-value-4 { --rating: 4; }
   .rating-value-5 { --rating: 5; }
+
   .rating-value-1::before,
   .rating-value-2::before,
   .rating-value-3::before,
@@ -38,6 +39,10 @@
   .rating-value-4::before { width: 80%; }
   .rating-value-5::before { width: 100%; }
   
+  .rating-color-red { color: red; }
+  .rating-color-gold { color: gold; }
+  /* Add more colors as needed */
+
   .rating-value-1::before,
   .rating-value-2::before,
   .rating-value-3::before,
