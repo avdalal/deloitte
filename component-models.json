@@ -319,7 +319,7 @@
         "fields": [
             {
                 "component": "number-input",
-                "valueType": "integer",
+                "valueType": "number",
                 "name": "ratingValue",
                 "label": "Rating Value",
                 "min": 0,
