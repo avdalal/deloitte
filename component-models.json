@@ -318,7 +318,7 @@
         "id": "rating",
         "fields": [
             {
-                "component": "number-input",
+                "component": "text-input",
                 "valueType": "number",
                 "name": "ratingValue",
                 "label": "Rating Value",
