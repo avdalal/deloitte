@@ -21,11 +21,11 @@ export default function decorate(block) {
 
     buttonText.remove();
     buttonColor.remove();
-    buttonRadius.remove();;
-    buttonTextSize.remove();;
-    buttonTextStyle.remove();;
-    href.remove();;
-    onclick.remove();;
+    buttonRadius.remove();
+    buttonTextSize.remove();
+    buttonTextStyle.remove();
+    href.remove();
+    onclick.remove();
 
     // Add button class for additional styling
     button.classList.add('customButton');
