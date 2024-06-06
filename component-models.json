@@ -313,5 +313,35 @@
                 "value": ""
             }
         ]
+    },
+    {
+        "id": "rating",
+        "fields": [
+            {
+                "component": "number-input",
+                "valueType": "integer",
+                "name": "ratingValue",
+                "label": "Rating Value",
+                "min": 0,
+                "max": 5
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "ratingText",
+                "label": "Rating Text"
+            },
+            {
+                "component": "select",
+                "valueType": "string",
+                "name": "ratingColor",
+                "label": "Rating Color",
+                "options": [
+                    { "name": "Red", "value": "red" },
+                    { "name": "Green", "value": "green" },
+                    { "name": "Blue", "value": "blue" }
+                ]
+            }
+        ]
     }
 ]
