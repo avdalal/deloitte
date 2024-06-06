@@ -282,7 +282,7 @@
                 ]
             },
             {
-                "component": "color-picker",
+                "component": "string",
                 "valueType": "string",
                 "name": "textColor",
                 "label": "Color"
