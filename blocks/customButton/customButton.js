@@ -19,14 +19,17 @@ export default function decorate(block) {
         button.href = 'javascript:void(0)';
     }
 
-
+    buttonText.remove();
+    buttonColor.remove();
+    buttonRadius.remove();;
+    buttonTextSize.remove();;
+    buttonTextStyle.remove();;
+    href.remove();;
+    onclick.remove();;
 
     // Add button class for additional styling
     button.classList.add('customButton');
 
-    // Replace the block's content with the new button
-    while (block.firstChild) {
-        block.firstChild.remove();
-    }
+   
     block.appendChild(button);
 }
