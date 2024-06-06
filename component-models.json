@@ -268,5 +268,52 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "button",
+        "fields": [
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "buttonText",
+                "label": "Button Text"
+            },
+            {
+                "component": "select",
+                "valueType": "string",
+                "name": "buttonColor",
+                "label": "Button Color",
+                "options": [
+                    { "name": "Red", "value": "red" },
+                    { "name": "Green", "value": "green" },
+                    { "name": "Blue", "value": "blue" },
+                    { "name": "Black", "value": "black" },
+                    { "name": "White", "value": "white" }
+                ]
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "buttonRadius",
+                "label": "Button Radius"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "buttonTextSize",
+                "label": "Button Text Size"
+            },
+            {
+                "component": "select",
+                "valueType": "string",
+                "name": "buttonTextStyle",
+                "label": "Button Text Style",
+                "options": [
+                    { "name": "Normal", "value": "normal" },
+                    { "name": "Bold", "value": "bold" },
+                    { "name": "Italic", "value": "italic" }
+                ]
+            }
+        ]
     }
 ]
