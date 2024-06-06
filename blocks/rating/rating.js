@@ -17,4 +17,6 @@ export default function decorate(block) {
 
     // Set a CSS variable on the stars element with the color value
     stars.style.setProperty('--star-color', colorValue);
+    stars.style.setProperty('--rating', starsValue);
+
 }

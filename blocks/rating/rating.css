@@ -17,11 +17,6 @@
   .rating-value-5 {
     font-size: 0; /* Hide the numeric rating value */
   }
-  .rating-value-1 { --rating: 1; }
-  .rating-value-2 { --rating: 2; }
-  .rating-value-3 { --rating: 3; }
-  .rating-value-4 { --rating: 4; }
-  .rating-value-5 { --rating: 5; }
 
   .rating-value-1::before,
   .rating-value-2::before,
