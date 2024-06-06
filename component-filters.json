@@ -5,15 +5,15 @@
     },
     {
         "id": "columns",
-        "components": ["text", "image", "button", "title", "hero", "cards", "columns", "teaser", "titlev2"]
+        "components": ["text", "image", "button", "title", "hero", "cards", "columns", "teaser"]
     },
     {
         "id": "column",
-        "components": ["text", "image", "button", "title", "titlev2"]
+        "components": ["text", "image", "button", "title"]
     },
     {
         "id": "section",
-        "components": ["text", "image", "button", "title", "hero", "cards", "columns", "teaser", "titlev2"]
+        "components": ["text", "image", "button", "title", "hero", "cards", "columns", "teaser", "dynamicButton", "form"]
     },
     {
         "id": "cards",

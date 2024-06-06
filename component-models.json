@@ -66,72 +66,6 @@
         ]
     },
     {
-        "id": "titlev2",
-        "fields": [
-            {
-                "component": "text",
-                "valueType": "string",
-                "name": "titlev2",
-                "value": "",
-                "label": "Text"
-            },
-            {
-                "component": "select",
-                "name": "alighment",
-                "value": "right",
-                "label": "Alighment",
-                "valueType": "string",
-                "options": [
-                    {
-                        "name": "right",
-                        "value": "right"
-                    },
-                    {
-                        "name": "left",
-                        "value": "left"
-                    },
-                    {
-                        "name": "center",
-                        "value": "center"
-                    }
-                ]
-            },
-            {
-                "component": "select",
-                "name": "type",
-                "value": "h1",
-                "label": "Type",
-                "valueType": "string",
-                "options": [
-                    {
-                        "name": "h1",
-                        "value": "h1"
-                    },
-                    {
-                        "name": "h2",
-                        "value": "h2"
-                    },
-                    {
-                        "name": "h3",
-                        "value": "h3"
-                    },
-                    {
-                        "name": "h4",
-                        "value": "h4"
-                    },
-                    {
-                        "name": "h5",
-                        "value": "h5"
-                    },
-                    {
-                        "name": "h6",
-                        "value": "h6"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": "image",
         "fields": [
             {
@@ -307,6 +241,44 @@
                 "name": "foreground_description",
                 "label": "Description",
                 "value": ""
+            }
+        ]
+    },
+    {
+        "id": "dynamicButton",
+        "fields": [
+            {
+                "component": "radio-group",
+                "valueType": "string",
+                "name": "radioSelection",
+                "label": "Radio Selection",
+                "options": ["Option 1", "Option 2", "Option 3"]
+            },
+            {
+                "component": "select",
+                "valueType": "string",
+                "name": "position",
+                "label": "Position",
+                "options": ["Left", "Center", "Right"]
+            },
+            {
+                "component": "select",
+                "valueType": "string",
+                "name": "textStyle",
+                "label": "Text Style",
+                "options": ["Normal", "Bold", "Italic"]
+            },
+            {
+                "component": "color-picker",
+                "valueType": "string",
+                "name": "color",
+                "label": "Color"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "buttonText",
+                "label": "Button Text"
             }
         ]
     }
