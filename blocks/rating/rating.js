@@ -6,8 +6,7 @@ export default function decorate(block) {
     const starsValue = stars.textContent;
     const colorValue = color.textContent;
 
-    // Hide the color element
-    color.style.display = 'none';
+
 
     // Add a class to the stars element based on its value
     stars.classList.add(`rating-value-${starsValue}`);
@@ -18,5 +17,7 @@ export default function decorate(block) {
     // Set a CSS variable on the stars element with the color value
     stars.style.setProperty('--star-color', colorValue);
     stars.style.setProperty('--rating', starsValue);
+
+    color.remove();
 
 }

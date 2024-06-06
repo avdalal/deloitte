@@ -19,10 +19,7 @@ export default function decorate(block) {
         button.href = 'javascript:void(0)';
     }
 
-    // Add onclick event listener
-    button.addEventListener('click', function() {
-        eval(onclick); // Execute the onclick code from the block
-    });
+
 
     // Add button class for additional styling
     button.classList.add('customButton');
