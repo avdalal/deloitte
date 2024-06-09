@@ -1,11 +1,27 @@
-.block.customButton {
-    color: white; 
-    padding: 10px 20px; 
-    text-decoration: none; 
-    display: inline-block; 
-    transition: background-color 0.3s ease; 
+.button-value-1,
+.button-value-2,
+.button-value-3,
+.button-value-4,
+.button-value-5 {
+    font-size: 0; /* Hide the numeric button value */
 }
 
-.block.customButton:hover {
-    background-color: darkblue; 
+.button-value-1::before,
+.button-value-2::before,
+.button-value-3::before,
+.button-value-4::before,
+.button-value-5::before {
+    content: "Button"; /* Add button text */
+    font-size: 20px;
+    color: lightgray;
+}
+
+.button-value-1::before,
+.button-value-2::before,
+.button-value-3::before,
+.button-value-4::before,
+.button-value-5::before {
+    background: linear-gradient(90deg, var(--button-color) calc(var(--button) * 20%), lightgray 0);
+    -webkit-background-clip: text;
+    color: transparent;
 }
