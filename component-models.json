@@ -282,7 +282,7 @@
         ]
     },
     {
-        "id": "slideElement",
+        "id": "slide",
         "fields": [
             {
                 "component": "reference",
