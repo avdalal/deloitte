@@ -219,7 +219,16 @@
                                 "resourceType": "core/franklin/components/block/v1/block/item",
                                 "template": {
                                     "name": "Slide",
-                                    "model": "slide"
+                                    "model": "slide",
+                                    "imageSrc": "default.jpg",
+                                    "altText": "Default alt text",
+                                    "caption": "Default caption",
+                                    "href": "#",
+                                    "transitionTime": 5000,
+                                    "title": "Default title",
+                                    "subtitle": "Default subtitle",
+                                    "ctaText": "Click me",
+                                    "ctaHref": "#"
                                 }
                             }
                         }
