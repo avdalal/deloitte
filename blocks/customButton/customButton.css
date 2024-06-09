@@ -1,4 +1,4 @@
-.customButton {
+.block.customButton {
     color: white; 
     padding: 10px 20px; 
     text-decoration: none; 
@@ -6,6 +6,6 @@
     transition: background-color 0.3s ease; 
 }
 
-.customButton:hover {
+.block.customButton:hover {
     background-color: darkblue; 
 }

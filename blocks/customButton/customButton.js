@@ -5,11 +5,37 @@ export default function decorate(block) {
     // Create a new button element
     const button = document.createElement('a'); 
 
-    buttonText.remove();
+    // Set the button's properties based on the p elements
+    button.textContent = buttonText.textContent;
+    button.style.backgroundColor = buttonColor.textContent;
+    button.style.borderRadius = buttonRadius.textContent;
+    button.style.fontSize = buttonTextSize.textContent;
+    button.style.fontStyle = buttonTextStyle.textContent;
+    button.onclick = onclick.textContent;
+    console.log(href.textContent);
+    //check if href is undefined
+    if(typeof(href) != "undefined") {
+        button.href = href.textContent;
+    } else {
+        button.href = 'javascript:void(0)';
+    }
 
-    // Add button class for additional styling
-    button.classList.add('customButton');
+    // Create a div element
+    const div = document.createElement('div');
+    // Create a div element
+    const p = document.createElement('p');
 
-    // Append the button to the block
-    block.appendChild(button);
+    // Add a class to the div
+    div.classList.add('button-container');
+
+    // Append the button to the div
+    p.appendChild(button);
+    // Append the button to the div
+    div.appendChild(p);
+
+    // Remove the original p elements from the DOM
+    [...block.children].forEach(div => div.remove());
+
+    // Append the div to the block
+    block.appendChild(div);
 }

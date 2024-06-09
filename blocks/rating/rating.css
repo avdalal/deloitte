@@ -4,7 +4,7 @@
     align-items: center;
   }
   
-  .rating block {
+  .rating .block {
     display: flex;
     justify-content: center;
     align-items: center;
