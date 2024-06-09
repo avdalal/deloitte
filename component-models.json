@@ -223,6 +223,17 @@
         ]
     },
     {
+        "id": "buttonElement",
+        "fields": [
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "buttonText",
+                "label": "Button Text"
+            }
+        ]
+    },
+    {
         "id": "customButton",
         "fields": [
             {
