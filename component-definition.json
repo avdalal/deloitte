@@ -220,12 +220,12 @@
                                 "template": {
                                     "name": "Slide",
                                     "model": "slide",
-                                    "imageSrc": "default.jpg",
-                                    "altText": "Default alt text",
-                                    "caption": "Default caption",
+                                    "backround_image": "default.jpg",
+                                    "backround_imageAlt": "Default alt text",
+                                    "foreground_description": "Default caption",
                                     "href": "#",
                                     "transitionTime": 5000,
-                                    "title": "Default title",
+                                    "foreground_title": "Default title",
                                     "subtitle": "Default subtitle",
                                     "ctaText": "Click me",
                                     "ctaHref": "#"
