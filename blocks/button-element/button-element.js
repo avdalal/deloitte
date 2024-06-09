@@ -1,8 +1,6 @@
 export default function decorate(block) {
     const pElements = [...block.querySelectorAll('p')];
-    if (pElements.length < 7) {
-        throw new Error('Not enough p elements');
-    }
+
 
     const [buttonText, buttonColor, buttonRadius, buttonTextSize, buttonTextStyle, href, onclick] = pElements;
 
