@@ -1,25 +1,23 @@
 export default function decorate(block) {
     // Find all p elements in the block
-    const  [buttonText, buttonColor] = [...block.querySelectorAll('p')];
+    const  [stars, color] = [...block.querySelectorAll('p')];
 
-    // Get the text content of the buttonText and buttonColor elements
-    const buttonTextValue = buttonText.textContent;
-    const buttonColorValue = buttonColor.textContent;
+    // Get the text content of the stars and color elements
+    const starsValue = stars.textContent;
+    const colorValue = color.textContent;
 
-    // Add a class to the buttonText element based on its value
-    buttonText.classList.add(`button-value-${buttonTextValue}`);
 
-    // Add a data attribute to the buttonText element with its value
-    buttonText.setAttribute('data-button', buttonTextValue);
 
-    // Set a CSS variable on the buttonText element with the color value
-    buttonText.style.setProperty('--button-color', buttonColorValue);
-    buttonText.style.setProperty('--button', buttonTextValue);
+    // Add a class to the stars element based on its value
+    stars.classList.add(`rating-value-${starsValue}`);
 
-    // Remove all other elements
-    [...block.children].forEach(child => {
-        if (child !== buttonText) {
-            child.remove();
-        }
-    });
+    // Add a data attribute to the stars element with its value
+    stars.setAttribute('data-rating', starsValue);
+
+    // Set a CSS variable on the stars element with the color value
+    stars.style.setProperty('--star-color', colorValue);
+    stars.style.setProperty('--rating', starsValue);
+
+    color.remove();
+
 }
