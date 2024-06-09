@@ -12,7 +12,7 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.block.imageslider .slider__slide {
+.block.imageslider .imageslider__slide {
     grid-row: 1;
     grid-column: 1;
     scroll-snap-align: start;
@@ -21,11 +21,11 @@
 }
 
 
-.block.imageslider .slider__slide.slider__slide--active {
+.block.imageslider .imageslider__slide.imageslider__slide--active {
     display: block;
 }
 
-.block.imageslider .slider__slide .slider__bg img {
+.block.imageslider .imageslider__slide .imageslider__bg img {
     display: block;
     width: 100%;
     max-height: 400px;
@@ -34,11 +34,11 @@
 }
 
 
-.block.imageslider .slider__slide .slider__bg p {
+.block.imageslider .imageslider__slide .imageslider__bg p {
     margin: 0;
 }
 
-.block.imageslider .slider__slide .slider__fg {
+.block.imageslider .imageslider__slide .imageslider__fg {
     position: absolute;
     left: 0;
     top: 50%;
@@ -46,7 +46,7 @@
     text-align: center;
     color: #000;
 }
-.block.imageslider .slider__slide .slider__fg p{
+.block.imageslider .imageslider__slide .imageslider__fg p{
     background-color: #111;
     color: #fff;
     padding: 10px;
@@ -57,7 +57,7 @@
 
 }
 
-.block.imageslider .slider__navigation-btn {
+.block.imageslider .imageslider__navigation-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -66,28 +66,28 @@
     background-repeat: no-repeat;
     background-position: center, right bottom;
 }
-.block.imageslider .slider__navigation-btn :hover {
+.block.imageslider .imageslider__navigation-btn :hover {
     background-color: transparent;
 }
 
-.block.imageslider .slider__navigation-btn--left:hover, 
-.block.imageslider .slider__navigation-btn--right:hover, 
-.block.imageslider .slider__navigation-btn--left:focus, 
-.block.imageslider .slider__navigation-btn--right:focus{
+.block.imageslider .imageslider__navigation-btn--left:hover, 
+.block.imageslider .imageslider__navigation-btn--right:hover, 
+.block.imageslider .imageslider__navigation-btn--left:focus, 
+.block.imageslider .imageslider__navigation-btn--right:focus{
     background-color: transparent;
     cursor: pointer;
 }
 
 
 
-.block.imageslider .slider__navigation-btn--left {
+.block.imageslider .imageslider__navigation-btn--left {
     background: transparent;
     background-image: url("../../images/left.png");
     background-repeat: no-repeat;
     left: -29px;
 }
 
-.block.imageslider .slider__navigation-btn--right {
+.block.imageslider .imageslider__navigation-btn--right {
     background: transparent;
     background-image: url("../../images/right.png");
     background-repeat: no-repeat;
@@ -95,16 +95,16 @@
     right: 3px;
 }
 @media (min-width: 600px) {
-    .slider__navigation-btn--left {
+    .imageslider__navigation-btn--left {
         left: -10px;
     }
-    .slider__navigation-btn--right {
+    .imageslider__navigation-btn--right {
         right: 25px;
     }
-    .slider__navigation-btn {
+    .imageslider__navigation-btn {
         height: 75px;
     }
-    .block.imageslider .slider__slide .slider__fg p{
+    .block.imageslider .imageslider__slide .imageslider__fg p{
         padding: 18px;
         font-size: 25px;
         letter-spacing: 10px;

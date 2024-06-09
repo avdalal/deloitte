@@ -1,15 +1,14 @@
 export default function decorate(block) {
-   // block.className = 'block slider';
     const slides = block.children;
 
     [...slides].forEach((slide, i) => {
-        slide.className = `slider__slide slider__slide--${i}${i === 0 ? ' slider__slide--active' : ''}`;
+        slide.className = `imageslider__slide imageslider__slide--${i}${i === 0 ? ' imageslider__slide--active' : ''}`;
 
        [...slide.children].forEach((div, index) => {
             if (index === 0 && div.querySelector('picture')) {
-                div.className = 'slider__bg';
+                div.className = 'imageslider__bg';
             } else {
-                div.className = 'slider__fg';
+                div.className = 'imageslider__fg';
             }
         });
     });
@@ -36,15 +35,15 @@ export default function decorate(block) {
 
     // Create navigation div
     const navigationDiv = document.createElement('div');
-    navigationDiv.className = 'slider__navigation';
+    navigationDiv.className = 'imageslider__navigation';
 
 
     const nextButton = document.createElement('button');
-    nextButton.className = 'slider__navigation-btn slider__navigation-btn--right';
+    nextButton.className = 'imageslider__navigation-btn imageslider__navigation-btn--right';
     nextButton.addEventListener('click', nextSlide);
 
     const prevButton = document.createElement('button');
-    prevButton.className = 'slider__navigation-btn slider__navigation-btn--left';
+    prevButton.className = 'imageslider__navigation-btn imageslider__navigation-btn--left';
     prevButton.addEventListener('click', prevSlide);
 
 
