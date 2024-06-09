@@ -13,6 +13,7 @@
     position: relative;
 }
 
+
 .block.slider .slider__slide.slider__slide--active {
     display: block;
 }
@@ -32,13 +33,21 @@
 
 .block.slider .slider__slide .slider__fg {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    background-color: rgba(51, 51, 51, 0.25);
-    color: white;
-    padding: 1.5rem;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.block.slider .slider__slide .slider__fg p{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+
 }
 
 .slider__navigation-btn {
