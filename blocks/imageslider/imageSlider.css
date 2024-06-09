@@ -57,7 +57,7 @@
 
 }
 
-.slider__navigation-btn {
+.block.slider .slider__navigation-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -66,25 +66,28 @@
     background-repeat: no-repeat;
     background-position: center, right bottom;
 }
-.slider__navigation-btn :hover {
+.block.slider .slider__navigation-btn :hover {
     background-color: transparent;
 }
 
-.slider__navigation-btn--left:hover, .slider__navigation-btn--right:hover, .slider__navigation-btn--left:focus, .slider__navigation-btn--right:focus{
+.block.slider .slider__navigation-btn--left:hover, 
+.block.slider .slider__navigation-btn--right:hover, 
+.block.slider .slider__navigation-btn--left:focus, 
+.block.slider .slider__navigation-btn--right:focus{
     background-color: transparent;
     cursor: pointer;
 }
 
 
 
-.slider__navigation-btn--left {
+.block.slider .slider__navigation-btn--left {
     background: transparent;
     background-image: url("../../images/left.png");
     background-repeat: no-repeat;
     left: -29px;
 }
 
-.slider__navigation-btn--right {
+.block.slider .slider__navigation-btn--right {
     background: transparent;
     background-image: url("../../images/right.png");
     background-repeat: no-repeat;
