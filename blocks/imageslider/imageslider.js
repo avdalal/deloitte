@@ -4,7 +4,7 @@ export default function decorate(block) {
 
     for (let i = 0; i < slides.length; i++) {
         const slide = slides[i];
-        slide.className = `slide`;
+        slide.className = `slide-${i}${i === 0 ? ' slide--active' : ''}`;
 
         [...slide.children].forEach((div, index) => {
             if (index === 0 && div.querySelector('picture')) {
