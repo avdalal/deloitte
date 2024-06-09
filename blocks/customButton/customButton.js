@@ -1,23 +1,37 @@
 export default function decorate(block) {
     // Find all p elements in the block
-    const  [stars, color] = [...block.querySelectorAll('p')];
+    const  [buttonText, buttonColor, buttonRadius, buttonTextSize, buttonTextStyle, href, onclick] = [...block.querySelectorAll('p')]
 
-    // Get the text content of the stars and color elements
-    const starsValue = stars.textContent;
-    const colorValue = color.textContent;
+    // Create a new button element
+    const button = document.createElement('a'); 
 
+    // Set the button's properties based on the p elements
+    button.textContent = buttonText.textContent;
+    button.style.backgroundColor = buttonColor.textContent;
+    button.style.borderRadius = buttonRadius.textContent;
+    button.style.fontSize = buttonTextSize.textContent;
+    button.style.fontStyle = buttonTextStyle.textContent;
 
+    // Check if href is not undefined before assigning
+    button.href = href ? href.textContent : 'javascript:void(0)';
 
-    // Add a class to the stars element based on its value
-    stars.classList.add(`rating-value-${starsValue}`);
+    // Check if onclick is not undefined before assigning
+    button.onclick = onclick ? onclick.textContent : null;
 
-    // Add a data attribute to the stars element with its value
-    stars.setAttribute('data-rating', starsValue);
+    // Create a div element
+    const div = document.createElement('div');
 
-    // Set a CSS variable on the stars element with the color value
-    stars.style.setProperty('--star-color', colorValue);
-    stars.style.setProperty('--rating', starsValue);
+    // Add a class to the div
+    div.classList.add('button-container');
 
-    color.remove();
+    // Append the button to the div
+    div.appendChild(button);
 
+    // Clear the block
+    while (block.firstChild) {
+        block.removeChild(block.firstChild);
+    }
+
+    // Append the div to the block
+    block.appendChild(div);
 }
