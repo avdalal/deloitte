@@ -57,6 +57,9 @@ export default function decorate(block) {
     // Show the first slide
     showSlide(slideIndex);
 
+    const lastSlide = slides[slides.length - 1];
+    console.log(lastSlide);
+
     // Change slide every 5 seconds
     setInterval(nextSlide, 5000);
 }

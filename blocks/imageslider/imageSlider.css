@@ -46,17 +46,27 @@
     top: 50%;
     transform: translateY(-50%);
     width: 50px;
-    height: 50px;
+    height: 75px;
     background-repeat: no-repeat;
     background-position: center, right bottom;
 }
+.slider__navigation-btn :hover {
+    background-color: transparent;
+}
+
+.slider__navigation-btn--left:hover, .slider__navigation-btn--right:hover, .slider__navigation-btn--left:focus, .slider__navigation-btn--right:focus{
+    background-color: transparent;
+    cursor: pointer;
+}
 
 .slider__navigation-btn--left {
-    background-image: url("../images/left.png");
-    left: -16px;
+    background: transparent;
+    background-image: url("../../images/left.png");
+    left: -15px;
 }
 
 .slider__navigation-btn--right {
-    background-image: url("../resources/images/right.png");
-    right: -16px;
+    background: transparent;
+    background-image: url("../../images/right.png");
+    right: 15px;
 }

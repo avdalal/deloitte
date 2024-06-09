@@ -204,7 +204,8 @@
                                 "resourceType": "core/franklin/components/block/v1/block",
                                 "template": {
                                     "name": "ImageSlider",
-                                    "filter": "imageSlider"
+                                    "filter": "imageSlider",
+                                    "transitionTime": "5000"
                                 }
                             }
                         }
@@ -222,7 +223,6 @@
                                     "model": "slide",
                                     "backround_imageAlt": "Default alt text",
                                     "foreground_subtitle": "Default subtitle",
-                                    "backround_transitionTime": 5000,
                                     "foreground_title": "Default title"
                                 }
                             }

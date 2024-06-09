@@ -282,6 +282,18 @@
         ]
     },
     {
+        "id": "imageSlider",
+        "fields": [
+            {
+                "component": "text-input",
+                "valueType": "number",
+                "name": "transitionTime",
+                "label": "Transition Time"
+            }
+        ]
+    },
+
+    {
         "id": "slide",
         "fields": [
             {
@@ -308,12 +320,6 @@
                 "valueType": "string",
                 "name": "foreground_subtitle",
                 "label": "Subtitle"
-            },
-            {
-                "component": "text-input",
-                "valueType": "number",
-                "name": "backround_transitionTime",
-                "label": "Transition Time"
             }
         ]
     }
