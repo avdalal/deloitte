@@ -282,18 +282,6 @@
         ]
     },
     {
-        "id": "imageSlider",
-        "fields": [
-            {
-                "component": "text-input",
-                "valueType": "number",
-                "name": "transitionTime",
-                "label": "Transition Time"
-            }
-        ]
-    },
-
-    {
         "id": "slide",
         "fields": [
             {
