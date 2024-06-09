@@ -1,11 +1,11 @@
 export default function decorate(block) {
     block.className = 'block slider';
-    const slides = Array.from(block.children);
+    const slides = block.children;
 
-    slides.forEach((slide, i) => {
+    [...slides].forEach((slide, i) => {
         slide.className = `slider__slide slider__slide--${i}${i === 0 ? ' slider__slide--active' : ''}`;
 
-        Array.from(slide.children).forEach((div, index) => {
+       [...slide.children].forEach((div, index) => {
             if (index === 0 && div.querySelector('picture')) {
                 div.className = 'slider__bg';
             } else {
