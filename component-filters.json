@@ -22,5 +22,9 @@
     {
         "id": "imageSlider",
         "components": ["slide"]
+    },
+    {
+        "id": "slide",
+        "components": ["buttonElement"]
     }
 ]

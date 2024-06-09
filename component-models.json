@@ -326,18 +326,6 @@
                 "valueType": "string",
                 "name": "subtitle",
                 "label": "Subtitle"
-            },
-            {
-                "component": "text-input",
-                "valueType": "string",
-                "name": "ctaText",
-                "label": "CTA Text"
-            },
-            {
-                "component": "button-element",
-                "valueType": "string",
-                "name": "ctaHref",
-                "label": "CTA Href"
             }
         ]
     }

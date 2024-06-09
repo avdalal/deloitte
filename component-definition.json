@@ -225,9 +225,7 @@
                                     "href": "#",
                                     "transitionTime": 5000,
                                     "foreground_title": "Default title",
-                                    "subtitle": "Default subtitle",
-                                    "ctaText": "Click me",
-                                    "ctaHref": "#"
+                                    "subtitle": "Default subtitle"
                                 }
                             }
                         }
