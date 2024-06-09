@@ -35,30 +35,11 @@ export default function decorate(block) {
     }
 
     // Create navigation div
-    const navigationDiv = document.createElement('div');
-    navigationDiv.className = 'slider__navigation';
 
-    // Create next and prev buttons
-    const nextButton = document.createElement('button');
-    nextButton.className = 'slider__navigation-btn slider__navigation-btn--right';
-    nextButton.addEventListener('click', nextSlide);
-
-    const prevButton = document.createElement('button');
-    prevButton.className = 'slider__navigation-btn slider__navigation-btn--left';
-    prevButton.addEventListener('click', prevSlide);
-
-    // Append buttons to navigation div
-    navigationDiv.appendChild(prevButton);
-    navigationDiv.appendChild(nextButton);
-
-    // Append navigation div to block
-    block.appendChild(navigationDiv);
 
     // Show the first slide
     showSlide(slideIndex);
 
-    const lastSlide = slides[slides.length - 1];
-    console.log(lastSlide);
 
     // Change slide every 5 seconds
     setInterval(nextSlide, 5000);
