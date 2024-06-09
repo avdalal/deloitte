@@ -19,7 +19,11 @@ export default function decorate(block) {
 
     function showSlide(n) {
         slides.forEach((slide, index) => {
-            slide.style.display = index === n ? 'block' : 'none';
+            if (index === n) {
+                slide.classList.add('imageslider__slide--active');
+            } else {
+                slide.classList.remove('imageslider__slide--active');
+            }
         });
     }
 

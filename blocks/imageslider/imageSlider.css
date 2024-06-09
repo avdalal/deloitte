@@ -16,14 +16,9 @@
     grid-row: 1;
     grid-column: 1;
     scroll-snap-align: start;
-    display: none;
     position: relative;
 }
 
-
-.block.imageslider .imageslider__slide.imageslider__slide--active {
-    display: block;
-}
 
 .block.imageslider .imageslider__slide .imageslider__bg img {
     display: block;
@@ -94,6 +89,16 @@
 
     right: 3px;
 }
+
+.imageslider__slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.imageslider__slide.imageslider__slide--active {
+    opacity: 1;
+}
+
 @media (min-width: 600px) {
     .imageslider__navigation-btn--left {
         left: -10px;
