@@ -280,5 +280,64 @@
                 "label": "OnClick"
             }
         ]
+    },
+    {
+        "id": "slideElement",
+        "fields": [
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "imageSrc",
+                "label": "Image Source"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "altText",
+                "label": "Alternative Text"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "caption",
+                "label": "Caption"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "href",
+                "label": "Href"
+            },
+            {
+                "component": "text-input",
+                "valueType": "number",
+                "name": "transitionTime",
+                "label": "Transition Time"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "title",
+                "label": "Title"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "subtitle",
+                "label": "Subtitle"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "ctaText",
+                "label": "CTA Text"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "ctaHref",
+                "label": "CTA Href"
+            }
+        ]
     }
 ]
