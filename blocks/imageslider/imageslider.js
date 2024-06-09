@@ -14,6 +14,8 @@ export default function decorate(block) {
         });
     });
 
+    
+
     let slideIndex = 0;
 
     function showSlide(n) {

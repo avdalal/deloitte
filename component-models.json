@@ -311,12 +311,6 @@
             },
             {
                 "component": "text-input",
-                "valueType": "string",
-                "name": "backround_href",
-                "label": "Href"
-            },
-            {
-                "component": "text-input",
                 "valueType": "number",
                 "name": "backround_transitionTime",
                 "label": "Transition Time"

@@ -25,6 +25,11 @@
     object-fit: cover;
 }
 
+
+.block.slider .slider__slide .slider__bg p {
+    margin: 0;
+}
+
 .block.slider .slider__slide .slider__fg {
     position: absolute;
     top: 0;
