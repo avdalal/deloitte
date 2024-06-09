@@ -1,63 +1,75 @@
-.imageslider-wrapper{
+.imageslider-wrapper > div {
+    max-width: unset;
+  }
+  
+  .imageslider-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
-
-}
-.block.imageslider {
+    padding: 0;
+  }
+  
+  .imageslider {
     display: grid;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-}
-
-.block.imageslider .imageslider__slide {
+    position: relative;
+    padding: 32px;
+    min-height: 300px;
+  }
+  
+  .imageslider .imageslider__slide {
     grid-row: 1;
     grid-column: 1;
     scroll-snap-align: start;
     display: none;
     position: relative;
-}
-
-
-.block.imageslider .imageslider__slide.imageslider__slide--active {
+  }
+  
+  .imageslider .imageslider__slide.imageslider__slide--active {
     display: block;
-}
-
-.block.imageslider .imageslider__slide .imageslider__bg img {
+  }
+  
+  .imageslider .imageslider__bg picture {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  
+  .imageslider .imageslider__bg img {
     display: block;
     width: 100%;
-    max-height: 400px;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-}
-
-
-.block.imageslider .imageslider__slide .imageslider__bg p {
-    margin: 0;
-}
-
-.block.imageslider .imageslider__slide .imageslider__fg {
+  }
+  
+  .imageslider .imageslider__fg {
     position: absolute;
     left: 0;
     top: 50%;
     width: 100%;
     text-align: center;
     color: #000;
-}
-.block.imageslider .imageslider__slide .imageslider__fg p{
+  }
+  
+  .imageslider .imageslider__fg p {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #111;
     color: #fff;
     padding: 10px;
     font-size: 20px;
     letter-spacing: 5px;
-    display: table; /* keep the background color wrapped tight */
-    margin: 0px auto 0px auto; /* keep the table centered */
-
-}
-
-.block.imageslider .imageslider__navigation-btn {
+    display: table;
+    margin: 0px auto 0px auto;
+  }
+  
+  .imageslider .imageslider__navigation-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -65,48 +77,44 @@
     height: 115px;
     background-repeat: no-repeat;
     background-position: center, right bottom;
-}
-.block.imageslider .imageslider__navigation-btn :hover {
+  }
+  
+  .imageslider .imageslider__navigation-btn:hover {
     background-color: transparent;
-}
-
-.block.imageslider .imageslider__navigation-btn--left:hover, 
-.block.imageslider .imageslider__navigation-btn--right:hover, 
-.block.imageslider .imageslider__navigation-btn--left:focus, 
-.block.imageslider .imageslider__navigation-btn--right:focus{
-    background-color: transparent;
+  }
+  
+  .imageslider .imageslider__navigation-btn--left,
+  .imageslider .imageslider__navigation-btn--right {
+    background: transparent;
     cursor: pointer;
-}
-
-
-
-.block.imageslider .imageslider__navigation-btn--left {
-    background: transparent;
+  }
+  
+  .imageslider .imageslider__navigation-btn--left {
     background-image: url("../../images/left.png");
-    background-repeat: no-repeat;
     left: -29px;
-}
-
-.block.imageslider .imageslider__navigation-btn--right {
-    background: transparent;
+  }
+  
+  .imageslider .imageslider__navigation-btn--right {
     background-image: url("../../images/right.png");
-    background-repeat: no-repeat;
-
     right: 3px;
-}
-@media (min-width: 600px) {
-    .imageslider__navigation-btn--left {
-        left: -10px;
+  }
+  
+  @media (min-width: 600px) {
+    .imageslider .imageslider__navigation-btn--left {
+      left: -10px;
     }
-    .imageslider__navigation-btn--right {
-        right: 25px;
+  
+    .imageslider .imageslider__navigation-btn--right {
+      right: 25px;
     }
-    .imageslider__navigation-btn {
-        height: 75px;
+  
+    .imageslider .imageslider__navigation-btn {
+      height: 75px;
     }
-    .block.imageslider .imageslider__slide .imageslider__fg p{
-        padding: 18px;
-        font-size: 25px;
-        letter-spacing: 10px;
+  
+    .imageslider .imageslider__fg p {
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
     }
-}
+  }
