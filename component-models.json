@@ -109,7 +109,7 @@
             {
                 "component": "reference",
                 "valueType": "string",
-                "name": "image",
+                "name": "fileReference",
                 "label": "Image",
                 "multi": false
             },
@@ -285,7 +285,7 @@
         "id": "slideElement",
         "fields": [
             {
-                "component": "text-input",
+                "component": "reference",
                 "valueType": "string",
                 "name": "imageSrc",
                 "label": "Image Source"
