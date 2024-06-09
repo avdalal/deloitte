@@ -220,7 +220,6 @@
                                 "template": {
                                     "name": "Slide",
                                     "model": "slide",
-                                    "backround_image": "default.jpg",
                                     "backround_imageAlt": "Default alt text",
                                     "foreground_description": "Default caption",
                                     "href": "#",
