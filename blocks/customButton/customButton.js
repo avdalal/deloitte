@@ -27,8 +27,10 @@ export default function decorate(block) {
     // Append the button to the div
     div.appendChild(button);
 
-    // Remove the original p elements from the DOM
-    [...block.children].forEach(child => child.remove());
+    // Clear the block
+    while (block.firstChild) {
+        block.removeChild(block.firstChild);
+    }
 
     // Append the div to the block
     block.appendChild(div);
