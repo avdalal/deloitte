@@ -287,13 +287,13 @@
             {
                 "component": "reference",
                 "valueType": "string",
-                "name": "imageSrc",
+                "name": "backround_imageSrc",
                 "label": "Image Source"
             },
             {
                 "component": "text-input",
                 "valueType": "string",
-                "name": "altText",
+                "name": "backround_altText",
                 "label": "Alternative Text"
             },
             {
