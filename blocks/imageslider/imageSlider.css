@@ -1,35 +1,41 @@
 .block.slider {
-    display: flex;
+    display: grid;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 }
 
-.block.slider .slide {
-    flex: 0 0 auto;
-    width: 100%;
+.block.slider .slider__slide {
+    grid-row: 1;
+    grid-column: 1;
     scroll-snap-align: start;
     display: none;
+    position: relative;
 }
-.block.slider .slide.slide--active {
+
+.block.slider .slider__slide.slider__slide--active {
     display: block;
 }
 
-.block.slider .bg img {
+.block.slider .slider__slide .slider__bg img {
     display: block;
     width: 100%;
+    max-height: 400px;
     height: auto;
     object-fit: cover;
 }
 
-.block.slider .fg {
+.block.slider .slider__slide .slider__fg {
     position: absolute;
+    top: 0;
+    right: 0;
     bottom: 0;
+    left: 0;
     background-color: rgba(51, 51, 51, 0.75);
     color: white;
     padding: 1.5rem;
-    width: 100%;
 }
+
 .slider__navigation-btn {
     position: absolute;
     top: 50%;
