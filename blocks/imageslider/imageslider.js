@@ -1,10 +1,10 @@
 export default function decorate(block) {
-    const slides = block.children;
+    const slides = Array.from(block.children);
 
-    [...slides].forEach((slide, i) => {
+    slides.forEach((slide, i) => {
         slide.className = `imageslider__slide imageslider__slide--${i}${i === 0 ? ' imageslider__slide--active' : ''}`;
 
-       [...slide.children].forEach((div, index) => {
+        Array.from(slide.children).forEach((div, index) => {
             if (index === 0 && div.querySelector('picture')) {
                 div.className = 'imageslider__bg';
             } else {
@@ -50,7 +50,7 @@ export default function decorate(block) {
     navigationDiv.appendChild(prevButton);
     navigationDiv.appendChild(nextButton);
 
-
+    // Append navigation div to block
     block.appendChild(navigationDiv);
 
     // Show the first slide
