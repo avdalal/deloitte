@@ -183,22 +183,6 @@
                                 "template": {
                                     "name": "Button Element",
                                     "model": "buttonElement",
-                                    "buttonText": "Click me"
-                                }
-                            }
-                        }
-                    }
-                },
-                {
-                    "title": "CustomButton",
-                    "id": "customButton",
-                    "plugins": {
-                        "xwalk": {
-                            "page": {
-                                "resourceType": "core/franklin/components/block/v1/block",
-                                "template": {
-                                    "name": "CustomButton",
-                                    "model": "customButton",
                                     "buttonText": "Click me",
                                     "buttonColor": "blue",
                                     "buttonRadius": "5px",
