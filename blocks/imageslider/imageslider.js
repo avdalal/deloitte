@@ -1,5 +1,5 @@
 export default function decorate(block) {
-    block.className = 'block slider';
+   // block.className = 'block slider';
     const slides = block.children;
 
     [...slides].forEach((slide, i) => {
