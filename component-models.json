@@ -334,7 +334,7 @@
                 "label": "CTA Text"
             },
             {
-                "component": "buttonElement",
+                "component": "button-element",
                 "valueType": "string",
                 "name": "ctaHref",
                 "label": "CTA Href"
