@@ -13,7 +13,7 @@ export default function decorate(block) {
     button.style.fontStyle = buttonTextStyle.textContent;
 
     // Check if href is not undefined before assigning
-    button.href = href ? href.querySelector('a').href : 'javascript:void(0)';
+    button.href = href && isValidURL(href.querySelector('a').href) ? href.querySelector('a').href : '#';
 
     // Check if onclick is not undefined before assigning
     button.onclick = onclick ? new Function(onclick.textContent) : null;
@@ -23,4 +23,13 @@ export default function decorate(block) {
 
     // Replace the div with the new button
     buttonDiv.parentNode.replaceChild(button, buttonDiv);
+
+    function isValidURL(string) {
+        try {
+          new URL(string);
+          return true;
+        } catch (_) {
+          return false;  
+        }
+      }
 }
