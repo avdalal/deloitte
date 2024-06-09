@@ -12,7 +12,7 @@ export default function decorate(block) {
     button.style.fontWeight = buttonTextStyle.textContent;
 
     if (href && isValidURL(href.textContent)) {
-        button.onclick = () => window.location.href = href.textContent;
+        button.onclick = () => window.open(href.textContent, '_blank');
     }
 
     if (onclick) {
