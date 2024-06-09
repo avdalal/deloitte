@@ -21,7 +21,7 @@
     },
     {
         "id": "imageSlider",
-        "components": ["slide", "teaser"]
+        "components": ["slide"]
     },
     {
         "id": "slide",
