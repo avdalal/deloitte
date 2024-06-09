@@ -1,9 +1,17 @@
 export default function decorate(block) {
-    const bgs = block.children;
+    block.className = 'block slider';
+    const slides = block.children;
 
-    for (let i = 0; i < bgs.length; i++) {
-        const bg = bgs[i];
-        bgs[i].className = `slide-${i}`;
+    for (let i = 0; i < slides.length; i++) {
+        const slide = slides[i];
+        slide.className = `slide`;
+
+        [...slide.children].forEach((div, index) => {
+            if (index === 0 && div.querySelector('picture')) {
+                div.className = 'bg';
+            } else {
+                div.className = 'fg';
+            }
+        });
     }
-   
 }
