@@ -221,11 +221,10 @@
                                     "name": "Slide",
                                     "model": "slide",
                                     "backround_imageAlt": "Default alt text",
-                                    "foreground_description": "Default caption",
-                                    "href": "#",
-                                    "transitionTime": 5000,
-                                    "foreground_title": "Default title",
-                                    "subtitle": "Default subtitle"
+                                    "foreground_subtitle": "Default subtitle",
+                                    "backround_href": "#",
+                                    "backround_transitionTime": 5000,
+                                    "foreground_title": "Default title"
                                 }
                             }
                         }

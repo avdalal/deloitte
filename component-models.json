@@ -306,26 +306,20 @@
             {
                 "component": "text-input",
                 "valueType": "string",
-                "name": "foreground_description",
-                "label": "Description"
+                "name": "foreground_subtitle",
+                "label": "Subtitle"
             },
             {
                 "component": "text-input",
                 "valueType": "string",
-                "name": "href",
+                "name": "backround_href",
                 "label": "Href"
             },
             {
                 "component": "text-input",
                 "valueType": "number",
-                "name": "transitionTime",
+                "name": "backround_transitionTime",
                 "label": "Transition Time"
-            },
-            {
-                "component": "text-input",
-                "valueType": "string",
-                "name": "subtitle",
-                "label": "Subtitle"
             }
         ]
     }
