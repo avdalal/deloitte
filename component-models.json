@@ -287,20 +287,27 @@
             {
                 "component": "reference",
                 "valueType": "string",
-                "name": "backround_imageSrc",
-                "label": "Image Source"
+                "name": "backround_image",
+                "label": "Backround Image",
+                "multi": false
             },
             {
                 "component": "text-input",
                 "valueType": "string",
-                "name": "backround_altText",
-                "label": "Alternative Text"
+                "name": "backround_imageAlt",
+                "label": "Image Alt"
             },
             {
                 "component": "text-input",
                 "valueType": "string",
-                "name": "caption",
-                "label": "Caption"
+                "name": "foreground_title",
+                "label": "Title"
+            },
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "foreground_description",
+                "label": "Description"
             },
             {
                 "component": "text-input",
@@ -313,12 +320,6 @@
                 "valueType": "number",
                 "name": "transitionTime",
                 "label": "Transition Time"
-            },
-            {
-                "component": "text-input",
-                "valueType": "string",
-                "name": "title",
-                "label": "Title"
             },
             {
                 "component": "text-input",
