@@ -4,7 +4,7 @@ export default function decorate(block) {
     const  [buttonText, buttonColor, buttonRadius, buttonTextSize, buttonTextStyle, href, onclick] = [...block.querySelectorAll('.button-element-wrapper .button-element div div p')];
 
     // Create a new button element
-    const button = document.createElement('button');
+    const button = document.createElement('a');
 
     button.textContent = buttonText.textContent;
     button.style.backgroundColor = buttonColor.textContent;
