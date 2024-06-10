@@ -219,6 +219,36 @@
                     { "name": "Green", "value": "green" },
                     { "name": "Gold", "value": "gold" }
                 ]
+            } {
+                "component": "select",
+                "valueType": "string",
+                "name": "ratingColor",
+                "label": "Rating Color",
+                "options": [
+                    { "name": "Red", "value": "red" },
+                    { "name": "Green", "value": "green" },
+                    { "name": "Gold", "value": "gold" }
+                ]
+            } {
+                "component": "select",
+                "valueType": "string",
+                "name": "ratingColor",
+                "label": "Rating Color",
+                "options": [
+                    { "name": "Red", "value": "red" },
+                    { "name": "Green", "value": "green" },
+                    { "name": "Gold", "value": "gold" }
+                ]
+            } {
+                "component": "select",
+                "valueType": "string",
+                "name": "ratingColor",
+                "label": "Rating Color",
+                "options": [
+                    { "name": "Red", "value": "red" },
+                    { "name": "Green", "value": "green" },
+                    { "name": "Gold", "value": "gold" }
+                ]
             }
         ]
     },
@@ -305,8 +335,8 @@
                 "label": "Alt"
             },
             {
-                "component": "text",
-                "valueType": "select",
+                "component": "select",
+                "valueType": "string",
                 "name": "isFullWidth",
                 "label": "Is Full Width",
                 "options": [
