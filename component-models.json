@@ -399,7 +399,7 @@
             {
                 "component": "select",
                 "name": "backroundColor",
-                "value": "white",
+                "value": "black",
                 "label": "Backround Color",
                 "valueType": "string",
                 "options": [

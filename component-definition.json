@@ -273,7 +273,7 @@
                                     "title": "Title",
                                     "type": "h1",
                                     "subTitle": "Sub Title",
-                                    "backroundColor": "white",
+                                    "backroundColor": "black",
                                     "Href": "#"
                                 }
                             }
