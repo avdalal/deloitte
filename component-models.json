@@ -297,6 +297,18 @@
                 "value": "",
                 "label": "Text",
                 "valueType": "string"
+            },
+            {
+                "component": "text",
+                "valueType": "string",
+                "name": "alt",
+                "label": "Alt"
+            },
+            {
+                "component": "text",
+                "valueType": "radio",
+                "name": "is full width",
+                "label": "Is Full Width"
             }
         ]
     }
