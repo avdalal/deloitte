@@ -1,6 +1,8 @@
 [
     {
         "id": "main",
+        "title": "ראשי",
+        "label": "ראשי",
         "components": ["section"]
     },
     {
