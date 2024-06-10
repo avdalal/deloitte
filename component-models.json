@@ -306,9 +306,19 @@
             },
             {
                 "component": "text",
-                "valueType": "radio",
+                "valueType": "select",
                 "name": "is full width",
-                "label": "Is Full Width"
+                "label": "Is Full Width",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "yes"
+                    },
+                    {
+                        "name": "No",
+                        "value": "no"
+                    }
+                ]
             }
         ]
     }
