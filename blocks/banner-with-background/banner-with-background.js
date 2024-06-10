@@ -1,16 +1,12 @@
 export default function decorate(block) {
     const [title, type, subTitle, backgroundColor, href] = block.children;
 
-    // Create wrapper div
+
     const wrapper = document.createElement('div');
-   // wrapper.className = 'pensionManageCenter';
     wrapper.style.backgroundColor = backgroundColor.textContent.trim();
-
-
     wrapper.className = "banner-with-background block";
     // Create banner div
     const bannerDiv = document.createElement('div');
-    //bannerDiv.className = 'pensionManageBanner centeredContentWidth';
     wrapper.appendChild(bannerDiv);
 
     // Create link
@@ -26,11 +22,7 @@ export default function decorate(block) {
     titleElement.textContent = title.textContent;
     link.appendChild(titleElement);
 
-    // Create p
-    const p = document.createElement('p');
-    p.className = 'banner-with-background__sub-title';
-    p.textContent = subTitle.textContent;
-    link.appendChild(p);
+
 
     // Replace block with the new structure
     block.replaceWith(wrapper);
