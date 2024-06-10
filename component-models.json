@@ -345,5 +345,97 @@
                 "multi": false
             }
         ]
+    },
+    {
+        "id": "bannerWithBackground",
+        "fields": [
+            {
+                "component": "text",
+                "valueType": "string",
+                "name": "title",
+                "value": "",
+                "label": "Text"
+            },
+            {
+                "component": "select",
+                "name": "type",
+                "value": "h1",
+                "label": "Type",
+                "valueType": "string",
+                "options": [
+                    {
+                        "name": "h1",
+                        "value": "h1"
+                    },
+                    {
+                        "name": "h2",
+                        "value": "h2"
+                    },
+                    {
+                        "name": "h3",
+                        "value": "h3"
+                    },
+                    {
+                        "name": "h4",
+                        "value": "h4"
+                    },
+                    {
+                        "name": "h5",
+                        "value": "h5"
+                    },
+                    {
+                        "name": "h6",
+                        "value": "h6"
+                    }
+                ]
+            },
+            {
+                "component": "text",
+                "valueType": "string",
+                "name": "subTitle",
+                "value": "",
+                "label": "Sub Title"
+            },
+            {
+                "component": "select",
+                "name": "backroundColor",
+                "value": "white",
+                "label": "Backround Color",
+                "valueType": "string",
+                "options": [
+                    {
+                        "name": "white",
+                        "value": "white"
+                    },
+                    {
+                        "name": "black",
+                        "value": "black"
+                    },
+                    {
+                        "name": "blue",
+                        "value": "blue"
+                    },
+                    {
+                        "name": "green",
+                        "value": "green"
+                    },
+                    {
+                        "name": "red",
+                        "value": "red"
+                    },
+                    {
+                        "name": "purple",
+                        "value": "purple"
+                    }
+                ]
+            },
+            {
+                "component": "text",
+                "valueType": "string",
+                "name": "href",
+                "label": "Href",
+                "value": "#"
+            }
+        ]
     }
 ]
