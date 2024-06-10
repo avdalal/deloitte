@@ -321,5 +321,29 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "accordionItemElement",
+        "fields": [
+            {
+                "component": "text-input",
+                "valueType": "string",
+                "name": "headerText",
+                "label": "Header Text"
+            },
+            {
+                "component": "text-area",
+                "valueType": "string",
+                "name": "bodyText",
+                "label": "Body Text"
+            },
+            {
+                "component": "reference",
+                "valueType": "string",
+                "name": "iocn",
+                "label": "Icon",
+                "multi": false
+            }
+        ]
     }
 ]
