@@ -1,36 +1,37 @@
 export default function decorate(block) {
-    const slides = Array.from(block.children);
+    const [title, type, subTitle, backgroundColor, href] = block.children;
 
-    slides.forEach((slide, i) => {
-        // Create new elements
-        const wrapper = document.createElement('div');
-        const bannerLink = document.createElement('a');
-        const titleElement = document.createElement('h3');
-        const subTitleElement = document.createElement('span');
+    // Create wrapper div
+    const wrapper = document.createElement('div');
+   // wrapper.className = 'pensionManageCenter';
+    wrapper.style.backgroundColor = backgroundColor.textContent.trim();
 
-        // Get the title, subtitle, and background color from the slide
-        const [title, h1, subTitle, color] = slide.querySelectorAll('p');
 
-        // Set the class names and styles
-        wrapper.className = 'pensionManageCenter';
-        bannerLink.className = 'pensionManageBanner centeredContentWidth';
-        bannerLink.href = '#'; // replace with actual link
-        bannerLink.style.backgroundColor = color.textContent;
-        titleElement.style.color = '#ffffff';
-        subTitleElement.style.color = '#ffffff';
+    wrapper.className = "banner-with-background block";
+    // Create banner div
+    const bannerDiv = document.createElement('div');
+    //bannerDiv.className = 'pensionManageBanner centeredContentWidth';
+    wrapper.appendChild(bannerDiv);
 
-        // Set the text content
-        titleElement.textContent = title.textContent;
-        subTitleElement.textContent = subTitle.textContent;
+    // Create link
+    const link = document.createElement('a');
+    link.href = href.textContent.trim();
+    link.style.textDecoration = 'none';
+    link.target = '_self';
+    bannerDiv.appendChild(link);
 
-        // Append the title and subtitle to the banner link
-        bannerLink.appendChild(titleElement);
-        bannerLink.appendChild(subTitleElement);
+    // Create title element
+    const titleElement = document.createElement(type.textContent.trim());
+    titleElement.className = 'banner-with-background__title';
+    titleElement.textContent = title.textContent;
+    link.appendChild(titleElement);
 
-        // Append the banner link to the wrapper
-        wrapper.appendChild(bannerLink);
+    // Create p
+    const p = document.createElement('p');
+    p.className = 'banner-with-background__sub-title';
+    p.textContent = subTitle.textContent;
+    link.appendChild(p);
 
-        // Replace the slide with the wrapper
-        slide.parentNode.replaceChild(wrapper, slide);
-    });
+    // Replace block with the new structure
+    block.replaceWith(wrapper);
 }

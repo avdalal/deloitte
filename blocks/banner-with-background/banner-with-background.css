@@ -1,0 +1,19 @@
+/* styles.css */
+
+.banner-with-background {
+    /* Add your styles for the wrapper here */
+}
+
+.banner-with-background__link {
+    text-decoration: none;
+}
+
+.banner-with-background__title,
+.banner-with-background__sub-title {
+    /* Center the text and add some padding */
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
+
