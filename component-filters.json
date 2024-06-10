@@ -23,7 +23,6 @@
         "id": "accordion",
         "components": ["accordionItem"]
     },
-
     {
         "id": "cards",
         "components": ["card"]
