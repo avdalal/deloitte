@@ -13,12 +13,17 @@
     },
     {
         "id": "section",
-        "components": ["text", "image", "title", "hero", "cards", "columns", "teaser", "rating", "buttonElement", "carousel"]
+        "components": ["text", "image", "title", "hero", "cards", "columns", "teaser", "rating", "buttonElement", "carousel", "accodion"]
     },
     {
         "id": "carousel",
         "components": ["carouselItem"]
     },
+    {
+        "id": "accordion",
+        "components": ["accordionItem"]
+    },
+
     {
         "id": "cards",
         "components": ["card"]
