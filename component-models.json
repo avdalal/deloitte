@@ -323,7 +323,7 @@
         ]
     },
     {
-        "id": "accordionItemElement",
+        "id": "accordionItem",
         "fields": [
             {
                 "component": "text-input",
