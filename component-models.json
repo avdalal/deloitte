@@ -282,36 +282,6 @@
         ]
     },
     {
-        "id": "slide",
-        "fields": [
-            {
-                "component": "reference",
-                "valueType": "string",
-                "name": "backround_image",
-                "label": "Backround Image",
-                "multi": false
-            },
-            {
-                "component": "text-input",
-                "valueType": "string",
-                "name": "backround_imageAlt",
-                "label": "Image Alt"
-            },
-            {
-                "component": "text-input",
-                "valueType": "string",
-                "name": "foreground_title",
-                "label": "Title"
-            },
-            {
-                "component": "text-input",
-                "valueType": "string",
-                "name": "foreground_subtitle",
-                "label": "Subtitle"
-            }
-        ]
-    },
-    {
         "id": "carouselItem",
         "fields": [
             {
