@@ -1,0 +1,81 @@
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-header {
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .accordion-button:hover,
+  .accordion-button:focus {
+    background-color: transparent;
+  }
+  
+  .accordion-button {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    text-align: right;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .accordion-button.collapsed {
+    color: #777;
+  }
+  
+  .accordion-body {
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .accordion-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .accordion-collapse.collapsing {
+    /* During the transitions, the content can be 'auto' height */
+    position: relative;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .accordion-collapse.show {
+    max-height: 2000px; /* Adjust this value to be larger than the content's height */
+  }
+
+  .accordion-button {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    text-align: right;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-right: 30px; /* Space for the arrow */
+  }
+  
+  .accordion-button::after {
+    content: '▶'; /* Arrow character */
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-button.collapsed::after {
+    transform: rotate(90deg); /* Rotate the arrow when the accordion is open */
+  }
