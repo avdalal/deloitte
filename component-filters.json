@@ -13,8 +13,12 @@
     },
     {
         "id": "section",
-        "components": ["text", "image", "title", "hero", "cards", "columns", "teaser", "rating", "buttonElement", "imageSlider"]
+        "components": ["text", "image", "title", "hero", "cards", "columns", "teaser", "rating", "buttonElement", "imageSlider", "carousel"]
     },
+    {
+        "id": "carousel",
+        "components": ["carouselItem"]
+    }
     {
         "id": "cards",
         "components": ["card"]

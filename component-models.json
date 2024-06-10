@@ -310,5 +310,24 @@
                 "label": "Subtitle"
             }
         ]
+    },
+    {
+        "id": "carouselItem",
+        "fields": [
+            {
+                "component": "reference",
+                "valueType": "string",
+                "name": "fileReference",
+                "label": "Image",
+                "multi": false
+            },
+            {
+                "component": "richtext",
+                "name": "text",
+                "value": "",
+                "label": "Text",
+                "valueType": "string"
+            }
+        ]
     }
 ]
