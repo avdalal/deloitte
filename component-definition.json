@@ -110,7 +110,7 @@
                     }
                 },
                 {
-                    "title": "Cards",
+                    "title": "כרטיסים",
                     "id": "cards",
                     "plugins": {
                         "xwalk": {
