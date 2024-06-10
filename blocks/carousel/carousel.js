@@ -21,9 +21,9 @@ export default function decorate(block) {
     function showSlide(n) {
         slides.forEach((slide, index) => {
             if (index === n) {
-                slide.classList.add('carousel__slide--active');
+                slide.classList.add('carousel-item--active');
             } else {
-                slide.classList.remove('carousel__slide--active');
+                slide.classList.remove('carousel-item--active');
             }
         });
     }
