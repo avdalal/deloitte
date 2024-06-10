@@ -12,6 +12,16 @@ export default function decorate(block) {
                 div.className = 'carousel-item__fg';
             }
         });
+        const [text,alt,isFullWidth] = slide.querySelectorAll('.carousel-item__fg');
+        console.log(isFullWidth.textContent);
+        if(isFullWidth.textContent =="yes"){
+            block.parentElement.parentElement.classList.add('carousel-container--full-width');
+            isFullWidth.remove();
+        }
+        if(alt){
+            block.querySelector('.carousel-item__bg').querySelector('img').alt = alt.textContent;
+            alt.remove();
+        }   
     });
 
 
