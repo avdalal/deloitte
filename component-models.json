@@ -13,19 +13,19 @@
                 "component": "select",
                 "name": "alighment",
                 "value": "right",
-                "label": "Alighment",
+                "label": "יישור",
                 "valueType": "string",
                 "options": [
                     {
-                        "name": "right",
+                        "name": "ימין",
                         "value": "right"
                     },
                     {
-                        "name": "left",
+                        "name": "שמאל",
                         "value": "left"
                     },
                     {
-                        "name": "center",
+                        "name": "מרכז",
                         "value": "center"
                     }
                 ]
@@ -34,7 +34,7 @@
                 "component": "select",
                 "name": "type",
                 "value": "h1",
-                "label": "Type",
+                "label": "תגית הכותרת",
                 "valueType": "string",
                 "options": [
                     {
@@ -72,7 +72,7 @@
                 "component": "reference",
                 "valueType": "string",
                 "name": "fileReference",
-                "label": "Image",
+                "label": "תמונה",
                 "multi": false
             },
             {
@@ -92,14 +92,14 @@
                 "valueType": "number",
                 "name": "columns",
                 "value": "",
-                "label": "Columns"
+                "label": "עמודות"
             },
             {
                 "component": "text",
                 "valueType": "number",
                 "name": "rows",
                 "value": "",
-                "label": "Rows"
+                "label": "שורות"
             }
         ]
     },
@@ -110,14 +110,14 @@
                 "component": "reference",
                 "valueType": "string",
                 "name": "fileReference",
-                "label": "Image",
+                "label": "תמונה",
                 "multi": false
             },
             {
                 "component": "richtext",
                 "name": "text",
                 "value": "",
-                "label": "Text",
+                "label": "טקסט",
                 "valueType": "string"
             }
         ]
@@ -129,7 +129,7 @@
                 "component": "text",
                 "name": "style",
                 "value": "",
-                "label": "Style",
+                "label": "סגנון",
                 "valueType": "string"
             }
         ]
@@ -141,7 +141,7 @@
                 "component": "reference",
                 "valueType": "string",
                 "name": "image",
-                "label": "Image",
+                "label": "תמונה",
                 "multi": false
             },
             {
@@ -155,7 +155,7 @@
                 "component": "richtext",
                 "name": "text",
                 "value": "",
-                "label": "Text",
+                "label": "טקסט",
                 "valueType": "string"
             }
         ]
@@ -167,21 +167,21 @@
                 "component": "reference",
                 "valueType": "string",
                 "name": "backround_image",
-                "label": "Backround Image",
+                "label": "תמונת רקע",
                 "multi": false
             },
             {
                 "component": "text",
                 "valueType": "string",
                 "name": "backround_imageAlt",
-                "label": "Image Alt",
+                "label": "לתמונה Alt",
                 "value": ""
             },
             {
                 "component": "text",
                 "valueType": "string",
                 "name": "foreground_title",
-                "label": "Title",
+                "label": "תגית הכותרת",
                 "value": "",
                 "options": [
                     { "name": "h2", "value": "h2" },
@@ -192,7 +192,7 @@
                 "component": "richtext",
                 "valueType": "string",
                 "name": "foreground_description",
-                "label": "Description",
+                "label": "תיאור",
                 "value": ""
             }
         ]
@@ -204,7 +204,7 @@
                 "component": "text-input",
                 "valueType": "number",
                 "name": "ratingValue",
-                "label": "Rating Value",
+                "label": "ערך דירוג",
                 "min": 0,
                 "max": 5
             },
@@ -213,11 +213,11 @@
                 "component": "select",
                 "valueType": "string",
                 "name": "ratingColor",
-                "label": "Rating Color",
+                "label": "צבע הדירוג",
                 "options": [
-                    { "name": "Red", "value": "red" },
-                    { "name": "Green", "value": "green" },
-                    { "name": "Gold", "value": "gold" }
+                    { "name": "אדום", "value": "red" },
+                    { "name": "ירוק", "value": "green" },
+                    { "name": "זהב", "value": "gold" }
                 ]
             }
         ]
@@ -229,42 +229,48 @@
                 "component": "text-input",
                 "valueType": "string",
                 "name": "buttonText",
-                "label": "Button Text"
+                "label": "טקסט הכפתור"
             },
             {
                 "component": "select",
                 "valueType": "string",
                 "name": "buttonColor",
-                "label": "Button Color",
+                "label": "צבע הכפתור",
                 "options": [
-                    { "name": "Red", "value": "red" },
-                    { "name": "Green", "value": "green" },
-                    { "name": "Blue", "value": "blue" },
-                    { "name": "Black", "value": "black" },
-                    { "name": "White", "value": "white" }
+                    { "name": "אדום", "value": "red" },
+                    { "name": "ירוק", "value": "green" },
+                    { "name": "כחול", "value": "blue" },
+                    { "name": "שחור", "value": "black" },
+                    { "name": "זהב", "value": "gold" },
+                    { "name": "צהוב", "value": "yellow" },
+                    { "name": "סגול", "value": "purple" },
+                    { "name": "ורוד", "value": "pink" },
+                    { "name": "חום", "value": "brown" },
+                    { "name": "כתום", "value": "orange" },
+                    { "name": "אפור", "value": "gray" }
                 ]
             },
             {
                 "component": "text-input",
                 "valueType": "string",
                 "name": "buttonRadius",
-                "label": "Button Radius"
+                "label": "רדריוס הכפתור"
             },
             {
                 "component": "text-input",
                 "valueType": "string",
                 "name": "buttonTextSize",
-                "label": "Button Text Size"
+                "label": "גודל הטקסט"
             },
             {
                 "component": "select",
                 "valueType": "string",
                 "name": "buttonTextStyle",
-                "label": "Button Text Style",
+                "label": "סגנון הטקסט",
                 "options": [
-                    { "name": "Normal", "value": "normal" },
-                    { "name": "Bold", "value": "bold" },
-                    { "name": "Italic", "value": "italic" }
+                    { "name": "רגיל", "value": "normal" },
+                    { "name": "מודגש", "value": "bold" },
+                    { "name": "נטוי", "value": "italic" }
                 ]
             },
             {
@@ -288,14 +294,14 @@
                 "component": "reference",
                 "valueType": "string",
                 "name": "fileReference",
-                "label": "Image",
+                "label": "תמונה",
                 "multi": false
             },
             {
                 "component": "richtext",
                 "name": "text",
                 "value": "",
-                "label": "Text",
+                "label": "טקסט",
                 "valueType": "string"
             }
         ]
