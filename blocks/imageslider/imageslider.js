@@ -2,7 +2,8 @@ export default function decorate(block) {
     const slides = Array.from(block.children);
 
     slides.forEach((slide, i) => {
-        slide.className = `imageslider__slide imageslider__slide--${i}${i === 0 ? ' imageslider__slide--active' : ''}`;
+        slide.className = `imageslider__slide ${i === 0 ? ' imageslider__slide--active' : ''}`;
+        slide.id = `slide-${i}`;
 
         Array.from(slide.children).forEach((div, index) => {
             if (index === 0 && div.querySelector('picture')) {
