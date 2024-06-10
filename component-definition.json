@@ -1,7 +1,7 @@
 {
     "groups": [
         {
-            "title": "Default Content",
+            "title": "תוכן ברירת מחדל",
             "id": "default",
             "components": [
                 {
@@ -17,7 +17,7 @@
                     }
                 },
                 {
-                    "title": "Title",
+                    "title": "כותרת",
                     "id": "title",
                     "plugins": {
                         "xwalk": {
