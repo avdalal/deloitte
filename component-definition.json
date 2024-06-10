@@ -95,7 +95,7 @@
                     }
                 },
                 {
-                    "title": "הירו",
+                    "title": "Hero",
                     "id": "hero",
                     "plugins": {
                         "xwalk": {
