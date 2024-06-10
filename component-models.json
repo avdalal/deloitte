@@ -307,7 +307,7 @@
             {
                 "component": "text",
                 "valueType": "select",
-                "name": "is full width",
+                "name": "isFullWidth",
                 "label": "Is Full Width",
                 "options": [
                     {
