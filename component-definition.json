@@ -211,7 +211,7 @@
                     }
                 },
                 {
-                    "title": "Carousel Item",
+                    "title": "רכיב קרוסלה",
                     "id": "carouselItem",
                     "plugins": {
                         "xwalk": {
