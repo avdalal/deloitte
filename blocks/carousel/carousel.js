@@ -16,12 +16,14 @@ export default function decorate(block) {
         console.log(isFullWidth.textContent);
         if(isFullWidth.textContent =="yes"){
             block.parentElement.parentElement.classList.add('carousel-container--full-width');
-            isFullWidth.remove();
+           
         }
         if(alt){
             block.querySelector('.carousel-item__bg').querySelector('img').alt = alt.textContent;
-            alt.remove();
-        }   
+            
+        }  
+        isFullWidth.remove();
+        alt.remove(); 
     });
 
 
