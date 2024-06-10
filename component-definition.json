@@ -1,11 +1,11 @@
 {
     "groups": [
         {
-            "title": "Default Content",
+            "title": "תוכן ברירת מחדל",
             "id": "default",
             "components": [
                 {
-                    "title": "Text",
+                    "title": "טקסט",
                     "id": "text",
                     "plugins": {
                         "xwalk": {
@@ -17,14 +17,14 @@
                     }
                 },
                 {
-                    "title": "Title",
+                    "title": "כותרת",
                     "id": "title",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/title/v1/title",
                                 "template": {
-                                    "name": "Title",
+                                    "name": "כותרת",
                                     "model": "title"
                                 }
                             }
@@ -32,7 +32,7 @@
                     }
                 },
                 {
-                    "title": "Image",
+                    "title": "תמונה",
                     "id": "image",
                     "plugins": {
                         "xwalk": {
@@ -44,7 +44,7 @@
                     }
                 },
                 {
-                    "title": "List",
+                    "title": "רשימה",
                     "id": "list",
                     "plugins": {
                         "xwalk": {
@@ -58,11 +58,11 @@
             ]
         },
         {
-            "title": "Sections",
+            "title": "מדורים",
             "id": "sections",
             "components": [
                 {
-                    "title": "Section",
+                    "title": "מדור",
                     "id": "section",
                     "plugins": {
                         "xwalk": {
@@ -76,11 +76,11 @@
             ]
         },
         {
-            "title": "Blocks",
+            "title": "בלוקים",
             "id": "blocks",
             "components": [
                 {
-                    "title": "Columns",
+                    "title": "עמודות",
                     "id": "columns",
                     "plugins": {
                         "xwalk": {
@@ -95,14 +95,14 @@
                     }
                 },
                 {
-                    "title": "Hero",
+                    "title": "גיבור",
                     "id": "hero",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/block/v1/block",
                                 "template": {
-                                    "name": "Hero",
+                                    "name": "גיבור",
                                     "model": "hero"
                                 }
                             }
@@ -110,14 +110,14 @@
                     }
                 },
                 {
-                    "title": "Cards",
+                    "title": "כרטיסים",
                     "id": "cards",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/block/v1/block",
                                 "template": {
-                                    "name": "Cards",
+                                    "name": "כרטיסים",
                                     "filter": "cards"
                                 }
                             }
@@ -125,14 +125,14 @@
                     }
                 },
                 {
-                    "title": "Card",
+                    "title": "כרטיס",
                     "id": "card",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/block/v1/block/item",
                                 "template": {
-                                    "name": "Card",
+                                    "name": "כרטיס",
                                     "model": "card"
                                 }
                             }
@@ -140,16 +140,16 @@
                     }
                 },
                 {
-                    "title": "Teaser",
+                    "title": "טיזר",
                     "id": "teaser",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/block/v1/block",
                                 "template": {
-                                    "name": "Teaser",
+                                    "name": "טיזר",
                                     "model": "teaser",
-                                    "foreground_title": "New Teaser",
+                                    "foreground_title": "טיזר חדש",
                                     "foreground_description": "h2"
                                 }
                             }
@@ -157,14 +157,14 @@
                     }
                 },
                 {
-                    "title": "Rating",
+                    "title": "דירוג",
                     "id": "rating",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/block/v1/block",
                                 "template": {
-                                    "name": "Rating",
+                                    "name": "דירוג",
                                     "model": "rating",
                                     "ratingValue": "2",
                                     "ratingColor": "gold"
@@ -174,36 +174,36 @@
                     }
                 },
                 {
-                    "title": "ButtonElement",
+                    "title": "כפתור",
                     "id": "buttonElement",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/block/v1/block",
                                 "template": {
-                                    "name": "Button Element",
+                                    "name": "כפתור",
                                     "model": "buttonElement",
-                                    "buttonText": "Click me",
-                                    "buttonColor": "blue",
+                                    "buttonText": "לחץ עלי",
+                                    "buttonColor": "כחול",
                                     "buttonRadius": "5px",
                                     "buttonTextSize": "16px",
-                                    "buttonTextStyle": "Bold",
+                                    "buttonTextStyle": "מודגש",
                                     "href": "#",
-                                    "onclick": "alert('Hello World')"
+                                    "onclick": "alert('שלום עולם')"
                                 }
                             }
                         }
                     }
                 },
                 {
-                    "title": "Carousel",
+                    "title": "קרוסלה",
                     "id": "carousel",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/block/v1/block",
                                 "template": {
-                                    "name": "Carousel",
+                                    "name": "קרוסלה",
                                     "filter": "carousel"
                                 }
                             }
@@ -211,14 +211,14 @@
                     }
                 },
                 {
-                    "title": "Carousel Item",
+                    "title": "פריט קרוסלה",
                     "id": "carouselItem",
                     "plugins": {
                         "xwalk": {
                             "page": {
                                 "resourceType": "core/franklin/components/block/v1/block/item",
                                 "template": {
-                                    "name": "Carousel Item",
+                                    "name": "פריט קרוסלה",
                                     "model": "carouselItem"
                                 }
                             }
