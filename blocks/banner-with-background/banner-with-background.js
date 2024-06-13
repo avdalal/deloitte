@@ -15,7 +15,8 @@ export default function decorate(block) {
     // Create title element
     title.className = 'banner-with-background__title';
     link.textContent = title.textContent;
-    //title.appendChild(link);
+    title.children[0].remove();
+    title.appendChild(link);
 
     // Create p
 
