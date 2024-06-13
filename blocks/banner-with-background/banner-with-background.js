@@ -4,7 +4,6 @@ export default function decorate(block) {
 
     block.style.backgroundColor = backgroundColor.textContent.trim();
     
-    const newTitle = document.createElement('h1');
 
     // Create link
     const link = document.createElement('a');
@@ -16,9 +15,7 @@ export default function decorate(block) {
     // Create title element
     title.className = 'banner-with-background__title';
     newTitle.textContent = title.textContent;
-    link.textContent = title.textContent;
-    title.children[0].textContent = '';
-    title.children[0].appendChild(newTitle);
+
 
 
     // Create p
