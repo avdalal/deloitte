@@ -1,3 +1,6 @@
+.block.banner-with-background p {
+   margin: 0;
+}
 .banner-with-background__link {
     text-decoration: none;
 }
