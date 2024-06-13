@@ -20,6 +20,10 @@
         "components": ["carouselItem"]
     },
     {
+        "id": "bannerWithBackground",
+        "components": ["title", "text", "buttonElement"]
+    },
+    {
         "id": "accordion",
         "components": ["accordionItem"]
     },
