@@ -44,10 +44,10 @@ export default function transformToAccordion(block) {
   block.textContent = '';
   block.appendChild(accordion);
 
-  document.querySelectorAll('.accordion-button').forEach(button => {
+  document.querySelectorAll('.accordion-button').forEach((button) => {
     button.addEventListener('click', () => {
       const collapse = document.querySelector(button.dataset.bsTarget);
-  
+
       if (button.classList.contains('collapsed')) {
         button.classList.remove('collapsed');
         button.setAttribute('aria-expanded', 'true');
