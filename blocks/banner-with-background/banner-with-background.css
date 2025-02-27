@@ -1,10 +1,13 @@
 .block.banner-with-background p {
    margin: 0;
 }
+
+/* eslint-selector-class-pattern */
 .banner-with-background__link {
     text-decoration: none;
 }
 
+/* eslint-selector-class-pattern */
 .banner-with-background__title,
 .banner-with-background__sub-title {
     text-align: center;
