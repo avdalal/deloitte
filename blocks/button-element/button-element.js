@@ -25,6 +25,7 @@ export default function decorate(block) {
   }
 
   if (onclick) {
+    // eslint-disable-next-line no-new-func
     button.onclick = new Function(onclick.textContent);
   }
 

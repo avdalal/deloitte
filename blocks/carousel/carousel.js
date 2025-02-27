@@ -13,7 +13,6 @@ export default function decorate(block) {
       }
     });
     const [alt, isFullWidth] = slide.querySelectorAll('.carousel-item__fg');
-    console.debug(isFullWidth.textContent);
     if (isFullWidth.textContent === 'yes') {
       block.parentElement.parentElement.classList.add('carousel-container--full-width');
     }
