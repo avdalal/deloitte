@@ -9,11 +9,7 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  .accordion-button:hover,
-  .accordion-button:focus {
-    background-color: transparent;
-  }
-  
+
   .accordion-button {
     font-size: 16px;
     color: #333;
@@ -25,6 +21,13 @@
     outline: none;
     cursor: pointer;
     transition: color 0.3s ease;
+    position: relative;
+    padding-right: 30px; /* Space for the arrow */
+  }
+
+  .accordion-button:hover,
+  .accordion-button:focus {
+    background-color: transparent;
   }
   
   .accordion-button.collapsed {
@@ -52,21 +55,6 @@
   
   .accordion-collapse.show {
     max-height: 2000px; /* Adjust this value to be larger than the content's height */
-  }
-
-  .accordion-button {
-    font-size: 16px;
-    color: #333;
-    text-decoration: none;
-    width: 100%;
-    text-align: right;
-    border: none;
-    background: none;
-    outline: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    position: relative;
-    padding-right: 30px; /* Space for the arrow */
   }
   
   .accordion-button::after {
