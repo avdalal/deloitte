@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/deloitte/:/",
-    "/content/deloitte/configuration:/.helix/config.json"
+    "/content/deloitte/configuration:/.helix/config.json",
+    "/content/deloitte/products:/index/products.json"
   ]
 }
