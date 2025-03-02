@@ -123,6 +123,29 @@
         ]
     },
     {
+        "id": "categories",
+        "fields": []
+    },
+    {
+        "id": "category",
+        "fields": [
+            {
+                "component": "reference",
+                "valueType": "string",
+                "name": "fileReference",
+                "label": "Image",
+                "multi": false
+            },
+            {
+                "component": "richtext",
+                "name": "text",
+                "value": "",
+                "label": "Text",
+                "valueType": "string"
+            }
+        ]
+    },
+    {
         "id": "section",
         "fields": [
             {
@@ -162,6 +185,14 @@
     },
     {
         "id": "products",
+        "fields": []
+    },
+    {
+        "id": "productinfo",
+        "fields": []
+    },
+    {
+        "id": "cart",
         "fields": []
     },
     {

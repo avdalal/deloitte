@@ -13,7 +13,7 @@
     },
     {
         "id": "section",
-        "components": ["text", "image", "title", "hero", "cards", "columns", "products","teaser", "rating", "buttonElement", "carousel", "accordion", "bannerWithBackground"]
+        "components": ["text", "image", "title", "hero", "cards", "categories","columns", "products","productinfo","cart","teaser", "rating", "buttonElement", "carousel", "accordion", "bannerWithBackground"]
     },
     {
         "id": "carousel",
@@ -30,5 +30,13 @@
     {
         "id": "cards",
         "components": ["card"]
+    },
+    {
+        "id": "categories",
+        "components": ["category"]
+    },
+    {
+        "id": "category",
+        "components": ["text", "image", "title"]
     }
 ]

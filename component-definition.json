@@ -140,6 +140,36 @@
                     }
                 },
                 {
+                    "title": "Categories",
+                    "id": "categories",
+                    "plugins": {
+                        "xwalk": {
+                            "page": {
+                                "resourceType": "core/franklin/components/block/v1/block",
+                                "template": {
+                                    "name": "Categories",
+                                    "filter": "categories"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "title": "Category item",
+                    "id": "categoryItem",
+                    "plugins": {
+                        "xwalk": {
+                            "page": {
+                                "resourceType": "core/franklin/components/block/v1/block/item",
+                                "template": {
+                                    "name": "Category Item",
+                                    "model": "categoryItem"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
                     "title": "Products",
                     "id": "products",
                     "plugins": {
@@ -149,6 +179,36 @@
                                 "template": {
                                     "name": "Products",
                                     "model": "product"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "title": "Product Info",
+                    "id": "productinfo",
+                    "plugins": {
+                        "xwalk": {
+                            "page": {
+                                "resourceType": "core/franklin/components/block/v1/block",
+                                "template": {
+                                    "name": "Product Info",
+                                    "model": "productinfo"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "title": "Cart",
+                    "id": "cart",
+                    "plugins": {
+                        "xwalk": {
+                            "page": {
+                                "resourceType": "core/franklin/components/block/v1/block",
+                                "template": {
+                                    "name": "Cart",
+                                    "model": "cart"
                                 }
                             }
                         }
