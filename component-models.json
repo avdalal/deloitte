@@ -161,6 +161,10 @@
         ]
     },
     {
+        "id": "products",
+        "fields": []
+    },
+    {
         "id": "teaser",
         "fields": [
             {
