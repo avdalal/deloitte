@@ -13,7 +13,7 @@
     },
     {
         "id": "section",
-        "components": ["text", "image", "title", "hero", "cards", "categories","columns", "products","productinfo","cart","teaser", "rating", "buttonElement", "carousel", "accordion", "bannerWithBackground"]
+        "components": ["text", "image", "title", "hero", "cards", "categories","columns", "products","product-info","cart","teaser", "rating", "buttonElement", "carousel", "accordion", "bannerWithBackground"]
     },
     {
         "id": "carousel",
